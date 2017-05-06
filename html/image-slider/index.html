@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>Team 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+    
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+    
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
+			});
+		});
+		
+	</script>
+	
+</head>
+<body>
+
+<!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+						<a href="index.html" ><span class="b1">T</span><span class="b2">E</span><span class="b3">A</span><span class="b4">M</span><span class="b5">2</span></a>
+					</div><!-- //LOGO -->
+					
+					<!-- SEARCH FORM -->
+					<div id="search-form" class="pull-right">
+						<form method="get" action="#">
+							<input type="text" name="Search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
+						</form>
+					</div><!-- SEARCH FORM -->
+					
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="index.html" >Home</a></li>
+								<li class="scroll_btn"><a href="#about" >About Us</a></li>
+								<li class="scroll_btn"><a href="#projects" >Projects</a></li>
+								<li class="scroll_btn"><a href="#team" >Team</a></li>
+								<li class="scroll_btn"><a href="#news" >News</a></li>
+								<li class="scroll_btn last"><a href="Comments.php" >Contact Us</a></li>
+								<li class="sub-menu">
+									<a href="javascript:void(0);" >Pages</a>
+									<ul>
+										<li><a href="game.html" >Game Guides</a></li>
+										<li><a href="RetroGames.html" >Retro Games</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+		</header><!-- //HEADER -->
+		
+		
+		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+			<!-- TOP SLIDER -->
+			<div class="flexslider top_slider">
+				<ul class="slides">
+					<li class="slide1">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">GameGuidesInc</p>
+							<p class="title2 captionDelay4 FromTop">Starter </p>
+							<p class="title3 captionDelay6 FromTop">Guides</p>
+							<p class="title4 captionDelay7 FromBottom">Seriously For Beginners</p>
+						</div>
+						
+					<li class="slide2">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay6 FromLeft">Favorites </p>
+							<p class="title2 captionDelay4 FromLeft">Are </p>
+							<p class="title3 captionDelay2 FromLeft">Included</p>
+							<p class="title4 captionDelay7 FromLeft">Like Ark, Battlefield, Call of Duty, For Honor, Mass Effect, Overwatch and Warframe</p>
+						</div>
+						<a class="slide_btn FromRight" href="game.html" >Read More</a>
+					</li>
+					<li class="slide3">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay1 FromBottom">RetroGames</p>
+							<p class="title2 captionDelay2 FromBottom">Pong/</p>
+							<p class="title3 captionDelay3 FromBottom">Snake</p>
+							<p class="title4 captionDelay5 FromBottom">Seriously, Try Them</p>
+						</div>
+						<a class="slide_btn FromRight" href="RetroGames.html" >Read More </a>
+						
+						<!-- VIDEO BACKGROUND -->
+						<a id="P2" class="player" data-property="{videoURL:'tDvBwPzJ7dY',containment:'.top_slider .slide3',autoPlay:true, mute:true, startAt:0, opacity:1}" ></a>
+						<!-- //VIDEO BACKGROUND -->
+					</li>
+				</ul>
+			</div>
+			<div id="carousel">
+				<ul class="slides">
+					<li><img src="images/slider/slide1_bg.jpg" alt="" /></li>
+					<li><img src="images/slider/slide2_bg.jpg" alt="" /></li>
+					<li><img src="images/slider/slide3_bg.jpg" alt="" /></li>
+				</ul>
+			</div><!-- //TOP SLIDER -->
+		</section><!-- //HOME -->
+		
+		
+		<!-- ABOUT -->
+		<section id="about">
+			
+			<!-- SERVICES -->
+			<div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+				
+					<!-- ROW -->
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
+							<a class="services_item" href="javascript:void(0);" >
+								<p><b>Xbox</b>One</p>
+								<span>$449.99</span>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
+							<a class="services_item" href="javascript:void(0);" >
+								<p><b>PC</b>MasterRace</p>
+								<span>Prices Vary</span>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
+							<a class="services_item" href="javascript:void(0);" >
+								<p><b>Ps</b>4</p>
+								<span>$549.96</span>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
+							<a class="services_item" href="javascript:void(0);" >
+								<p><b>Nintendo</b>Switch</p>
+								<span>$299.99</span>
+							</a>
+						</div>
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //SERVICES -->
+			
+			<!-- CLEAN CODE -->
+			<div class="cleancode_block">
+				
+				
+			</div><!-- //CLEAN CODE -->
+			
+			<!-- MULTI PURPOSE -->
+			<div class="purpose_block">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+					
+					<!-- ROW -->
+					<div class="row">
+					
+						<div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
+							<h2><b>We are</b> GameGuideInc</h2>
+							<p>We are just a bunch of people who love to game.</p>
+							<p>We hope you like the website</p>
+							<a class="btn btn-active" href="game.html" ><span data-hover="Choose Me">Start Here</span></a>
+							<a class="btn" href="RetroGames.html" ><span data-hover="No choose me">Or Here</span></a>
+						</div>
+						
+						<div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight">
+							<img class="ipad_img1" src="https://siliconcanal.co.uk/wp-content/themes/class/inc/images/city-vector-blue-2x.png" alt="" />
+						</div>
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //MULTI PURPOSE -->
+		</section><!-- //ABOUT -->
+		
+		
+		<!-- PROJECTS -->
+		<section id="projects" class="padbot20">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b>Featured</b> Guides</h2>
+			</div><!-- //CONTAINER -->
+			
+				
+			<div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+				<!-- PROJECTS SLIDER -->
+				<div class="owl-demo owl-carousel projects_slider">
+					
+					<!-- work1 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="http://www.hdwallpaper.nu/wp-content/uploads/2015/12/ark_survival_evolved_2.jpg" alt="" />
+								<a class="zoom" href="http://www.hdwallpaper.nu/wp-content/uploads/2015/12/ark_survival_evolved_2.jpg" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="Ark.html" >Ark</a>
+									<span>June 2, 2015</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work1 -->
+					
+					<!-- work2 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="http://media-www-battlefieldwebcore.spark.ea.com/content/battlefield-portal/en_US/_global_/_jcr_content/ccm/componentwrapper_1/components/opengraph/ogImage.img.jpg" alt="" />
+								<a class="zoom" href="http://media-www-battlefieldwebcore.spark.ea.com/content/battlefield-portal/en_US/_global_/_jcr_content/ccm/componentwrapper_1/components/opengraph/ogImage.img.jpg" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="Battlefield.html" >Battlefield 1</a>
+									<span>October 21, 2016</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work2 -->
+					
+					<!-- work3 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="https://i.ytimg.com/vi/B7Y3DKLUqAQ/maxresdefault.jpg" alt="" />
+								<a class="zoom" href="https://i.ytimg.com/vi/B7Y3DKLUqAQ/maxresdefault.jpg" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="CallOfDuty.html" >Call of Duty</a>
+									<span>November 4, 2016</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work3 -->
+					
+					<!-- work4 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="https://ubistatic2-a.akamaihd.net/ncsa/forhonor/website/og/ForHonor_og_1200x630.jpg" alt="" />
+								<a class="zoom" href="https://ubistatic2-a.akamaihd.net/ncsa/forhonor/website/og/ForHonor_og_1200x630.jpg"></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="ForHonor.html" >For Honor</a>
+									<span>February 14, 2017</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work4 -->
+					
+					<!-- work5 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="https://prod-media-masseffect.pulse.ea.com/content/news/mea-news/en_US/2017/january/mass-effect-andromeda-coming-in-march/_jcr_content/sixteenNine.img.jpg" alt="" />
+								<a class="zoom" href="https://prod-media-masseffect.pulse.ea.com/content/news/mea-news/en_US/2017/january/mass-effect-andromeda-coming-in-march/_jcr_content/sixteenNine.img.jpg"></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="MassEffect.html" >MassEffect Andromeda</a>
+									<span>March 21, 2017</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work5 -->
+					
+					<!-- work6 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="http://assets.vg247.com/current//2015/09/overwatch.jpg" alt="" />
+								<a class="zoom" href="http://assets.vg247.com/current//2015/09/overwatch.jpg"></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="Overwatch.html" >Overwatch</a>
+									<span>April 19, 2016</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work6 -->
+					
+					<!-- work7 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="https://s-media-cache-ak0.pinimg.com/originals/a5/63/27/a56327fa3dd50010aedc405c554e9251--warframe-game-cyborg.jpg" alt="" />
+								<a class="zoom" href="https://s-media-cache-ak0.pinimg.com/originals/a5/63/27/a56327fa3dd50010aedc405c554e9251--warframe-game-cyborg.jpg"></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="Warframe.html" >Warframe</a>
+									<span>17 March, 2041</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work7 -->
+				</div><!-- //PROJECTS SLIDER -->
+			</div>
+			
+			
+			<!-- OUR CLIENTS -->
+			<div class="our_clients">
+			
+				<!-- CONTAINER -->
+				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+					
+					
+				</div><!-- CONTAINER -->
+			</div><!-- //OUR CLIENTS -->
+		</section><!-- //PROJECTS -->
+		
+		
+		<!-- TEAM -->
+		<section id="team">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b>Our</b> Team</h2>
+				
+				<!-- ROW -->
+				<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- TEAM SLIDER -->
+					<div class="owl-demo owl-carousel team_slider">
+				
+						<!-- crewman1 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/1.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Jessica Kent</p>
+										<span>Developer</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/2.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Kristen Morse</p>
+										<span>Developer</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman3 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/3.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Alex Myers</p>
+										<span>Developer</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman3 -->
+						
+						<!-- crewman4 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/4.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Michael Palmer</p>
+										<span>Developer</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman4 -->
+						
+						<!-- crewman5 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/5.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Robert Shea</p>
+										<span>Developer</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman5 -->
+						
+						
+					</div><!-- TEAM SLIDER -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->
+		</section><!-- //TEAM -->
+		
+		
+		<!-- NEWS -->
+		<section id="news">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b>Latest</b> Progress</h2>
+				
+				<!-- TESTIMONIALS -->
+				<div class="testimonials" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- TESTIMONIALS SLIDER -->
+					<div class="owl-demo owl-carousel testim_slider">
+						
+						<!-- TESTIMONIAL1 -->
+						<div class="item">
+							<div class="testim_content">“We have started the bulletin board</div>
+							<div class="testim_author">—  Jessica Kent & Kristen Morse</div>
+						</div><!-- TESTIMONIAL1 -->
+						
+						<!-- TESTIMONIAL2 -->
+						<div class="item">
+							<div class="testim_content">“We've Almost finished the website</div>
+							<div class="testim_author">—  Michael Palmer <b></b></div>
+						</div><!-- TESTIMONIAL2 -->
+						
+						<!-- TESTIMONIAL3 -->
+						<div class="item">
+							<div class="testim_content">The Alexa Unit is comming along fine</div>
+							<div class="testim_author">—  Alex Myers & Robert Shea</div>
+						</div><!-- TESTIMONIAL3 -->
+					</div><!-- TESTIMONIALS SLIDER -->
+				</div><!-- //TESTIMONIALS -->
+				
+				
+			</div><!-- //CONTAINER -->
+		</section><!-- //NEWS -->
+	</div><!-- //PAGE -->
+	
+	<!-- CONTACTS -->
+	<section id="contacts">
+	</section><!-- //CONTACTS -->
+	
+	<!-- FOOTER -->
+	<footer>
+			
+		<!-- CONTAINER -->
+		<div class="container">
+			
+			<!-- ROW -->
+			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+				<div class="col-lg-4 col-md-4 col-sm-6 padbot30">
+				
+				<h4><b>Featured</b> posts</h4>
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small">
+							<img src="https://ubistatic2-a.akamaihd.net/ncsa/forhonor/website/og/ForHonor_og_1200x630.jpg" alt="" />
+						</div>
+						<div class="post_item_content_small">
+							<a class="title" href="ForHonor.html" >For Honor</a>
+							<ul class="post_item_inf_small">
+								<li>February 14, 2017</li>
+							</ul>
+						</div>
+					</div>
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small">
+							<img src="http://assets.vg247.com/current//2015/09/overwatch.jpg" alt="" />
+						</div>
+						<div class="post_item_content_small">
+							<a class="title" href="Overwatch.html" >Overwatch</a>
+							<ul class="post_item_inf_small">
+								<li>April 19, 2016</li>
+							</ul>
+						</div>
+					</div>
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small">
+							<img src="https://s-media-cache-ak0.pinimg.com/originals/a5/63/27/a56327fa3dd50010aedc405c554e9251--warframe-game-cyborg.jpg" alt="" />
+						</div>
+						<div class="post_item_content_small">
+							<a class="title" href="Warframe.html" >Warframe</a>
+							<ul class="post_item_inf_small">
+								<li>March 25, 2013</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
+					<h4><b>About</b> us</h4>
+					<p>We are GameGuidesInc</p>
+					<p>Team2</p>
+					<ul class="social">
+						<li><a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-facebook"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="fa fa-pinterest-square"></i></a></li>
+						<li><a href="javascript:void(0);" ><i class="map_show fa fa-map-marker"></i></a></li>
+					</ul>
+				</div>
+				
+				<div class="respond_clear"></div>
+				
+				<div class="col-lg-4 col-md-4 padbot30">
+					<h4><b>Contacts</b> Us</h4>
+					
+					<!-- CONTACT FORM -->
+					<div class="span9 contact_form">
+						<div id="note"></div>
+						<div id="fields">
+							<form id="contact-form-face" class="clearfix" action="#">
+								<input type="text" name="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
+								<input class="contact_btn" type="submit" value="Send message" />
+							</form>
+						</div>
+						
+					</div><!-- //CONTACT FORM -->
+				</div>
+			</div><!-- //ROW -->
+			<div class="row copyright">
+				<div class="col-lg-12 text-center">
+				
+				 <p>Copyright, Team2</a></p>
+				</div>
+			
+			</div><!-- //ROW -->
+		</div><!-- //CONTAINER -->
+	</footer><!-- //FOOTER -->
+	
+	
+	<!-- MAP -->
+	<div id="map">
+		<a class="map_hide" href="javascript:void(0);"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
+		<iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed" ></iframe>
+	</div><!-- //MAP -->
+
+</div>
+</body>
+</html>
